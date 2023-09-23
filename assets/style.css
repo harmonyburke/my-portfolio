@@ -1,5 +1,11 @@
+*{  
+    box-sizing: border-box;
+}
 body{
     background-color: tan;
+    background-image: url(.\assets\images\6389370_3259804.jpg);
+    background-position: center;
+    background-size: cover;
 }
 header{
     display:flex;
@@ -9,8 +15,11 @@ header{
 .headshot{
     padding:20px;
     size:50px;
+    background-image: url(.\assets\images\harmony.jpg);
+    background-size: 40px;
+    background-position: center;
 }
-h1 {
+.name {
     font-family: Georgia, 'Times New Roman', Times, serif;  
     font-size:60px;
     color:rgb(87, 119, 87);
