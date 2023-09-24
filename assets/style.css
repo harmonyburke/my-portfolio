@@ -1,8 +1,10 @@
 *{  
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
 body{
-    background-color: tan;
+    background-color:#66A182; 
     background-image: url(.\assets\images\6389370_3259804.jpg);
     background-position: center;
     background-size: cover;
@@ -10,6 +12,18 @@ body{
 header{
     display:flex;
     flex-direction: row;
+    border-style:double;
+    background-color: #26413C;
+
+}
+.about-me{ 
+    margin-left:30px;
+    margin-right: 500px;
+    margin-top: 30px;
+    background-color: #26413C;
+    display: flexbox;
+    justify-content: flex-start;
+
 
 }
 .headshot{
@@ -21,21 +35,45 @@ header{
 }
 .name {
     font-family: Georgia, 'Times New Roman', Times, serif;  
-    font-size:60px;
-    color:rgb(87, 119, 87);
-    background-color: rgb(65, 45, 25);
+    font-size:40px;
+    color:#fffbdb;
+    background-color: rgb);
     display:flex;
-    justify-content: flex-start;
+    justify-content:center;
 }
-.nav-links {
+nav{
+    margin:left 20px;
     padding: 20px;
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;  
     color:lightskyblue;
-    display:flex;
-    justify-content: space-around;
+    display:inline-block;
+    align-items:center
+    justify-content:space-between;
     
-   
-    
+}
 
+
+.nav-links nav ul li a{
+    list-style: none;
+    display:inline-block;
+    margin:left 20px;
+    position: relative;
+    font-size: 20px;
+    display:flex;
+    justify-content: space-evenly;
+
+
+}
+.work{
+    display: flexbox;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end
+    margin-left:400px;
+}
+
+h2{
+    justify-content: center;
+    border-style: double;
 }
