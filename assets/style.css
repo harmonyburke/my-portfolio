@@ -1,43 +1,50 @@
+:root {
+    --palegreen: #66A182;
+    --darkgreen:#26413C;
+    --textcolor:#fffbdb;
+    --burntorange:#c47335;
+    --persianred:#bb4430;
+    --font:'Courier New', Courier, monospace;
+}
 *{  
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
 body{
-    background-color:#66A182; 
+    background-color:var(--palegreen); 
     background-image: url(.\assets\images\6389370_3259804.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: 5;
 }
+
 header{
     display:flex;
     flex-direction: row;
     border-style:double;
-    background-color: #26413C;
+    background-color: var(--darkgreen);
 
 }
 .about-me{ 
     margin-left:30px;
     margin-right: 500px;
     margin-top: 30px;
-    background-color: #26413C;
+    background-color: var(--darkgreen);
     display: flexbox;
     justify-content: flex-start;
 
 
 }
 .headshot{
-    padding:20px;
-    size:50px;
-    background-image: url(.\assets\images\harmony.jpg);
-    background-size: 40px;
-    background-position: center;
+    height: 100px;  
+    width: 100px;
 }
 .name {
-    font-family: Georgia, 'Times New Roman', Times, serif;  
+    font-family:var(--text);  
     font-size:40px;
     color:#fffbdb;
-    background-color: rgb);
+    border-style:double;
+    background-color: var(--persianred);
     display:flex;
     justify-content:center;
 }
@@ -45,35 +52,99 @@ nav{
     margin:left 20px;
     padding: 20px;
     font-size: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif;  
-    color:lightskyblue;
-    display:inline-block;
-    align-items:center
-    justify-content:space-between;
-    
+    font-family:var(--font);  
+    color:var(--textcolor);
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    display: inline-block;
+    justify-content: flex-end;
+    flex-direction: row;
 }
 
 
 .nav-links nav ul li a{
-    list-style: none;
+    list-style-type: none;
     display:inline-block;
     margin:left 20px;
     position: relative;
     font-size: 20px;
-    display:flex;
+    display:inline-block;
     justify-content: space-evenly;
 
 
 }
-.work{
-    display: flexbox;
-    justify-content: flex-end;
-    align-content: flex-end;
-    align-items: flex-end
-    margin-left:400px;
-}
 
+.about-me {
+    padding: 30px;
+    margin: 30px;
+    display: flex;  
+    justify-content: center;
+    font-family:var(--font);
+    color:var(--textcolor);
+    background-color: var(--darkgreen);
+
+}
 h2{
     justify-content: center;
     border-style: double;
+    font-family:var(--font);
+    color:#fffbdb;
+    background-color: var(--persianred);
 }
+p{
+    margin:20px;
+    padding:20px;
+    border-style: double;
+    font-family:var(--font);
+    color:var(--textcolor);
+
+}
+.work{
+    display:block;
+    border-style: double;
+    font-family: var(--font);
+    color:var(--textcolor);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.main-project {
+    border-style:double;
+    size: 40%;
+    padding:25px;
+    margin:25px;
+    text-decoration: none;
+
+}
+.project{
+    border-style:double;
+    size:100px;
+    padding:15px;
+    margin:15px;
+}
+.contact-Me{
+    font-family: var(--font);
+    color: var(--textcolor);
+    font-size: 25px;
+
+}
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    header, main {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+    }
+  
+    aside {
+      width: 100%;
+      text-align: center;
+    }
