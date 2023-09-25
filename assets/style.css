@@ -54,7 +54,8 @@ nav{
     font-size: 25px;
     font-family:var(--font);  
     color:var(--textcolor);
-    text-decoration: none;
+    display: flex;
+    flex-direction: row;
 }
 ul{
     list-style-type: none;
@@ -67,23 +68,32 @@ ul{
 .nav-links nav ul li a{
     list-style-type: none;
     display:inline-block;
-    margin:left 20px;
     position: relative;
     font-size: 20px;
     display:inline-block;
     justify-content: space-evenly;
-
+    margin: auto;
+    width: 50%;
+    border: 3px double;
+    padding: 10px;
+    
 
 }
 
-.about-me {
-    padding: 30px;
-    margin: 30px;
+#about-me {
+    padding: 20px;
+    margin-left: 20px;
     display: flex;  
-    justify-content: center;
     font-family:var(--font);
     color:var(--textcolor);
     background-color: var(--darkgreen);
+    flex-direction: column;
+    padding: 20px;
+    clear: both;
+    float: left;
+    width: 20%;
+    height: 100%;
+    
 
 }
 h2{
@@ -92,6 +102,7 @@ h2{
     font-family:var(--font);
     color:#fffbdb;
     background-color: var(--persianred);
+    text-align: center;
 }
 p{
     margin:20px;
@@ -99,22 +110,26 @@ p{
     border-style: double;
     font-family:var(--font);
     color:var(--textcolor);
+    text-align: center;
 
 }
-.work{
+#work{
     display:block;
     border-style: double;
     font-family: var(--font);
     color:var(--textcolor);
     text-decoration: none;
     font-size: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .main-project {
     border-style:double;
-    size: 40%;
-    padding:25px;
-    margin:25px;
+    size: 50%;
+    padding:20px;
+    margin:20px;
     text-decoration: none;
 
 }
@@ -124,27 +139,19 @@ p{
     padding:15px;
     margin:15px;
 }
-.contact-Me{
+#contact-me{
     font-family: var(--font);
     color: var(--textcolor);
     font-size: 25px;
+    text-align: center;
 
 }
 footer ul li{
     font-family: var(--font);
     color:var(--textcolor);
 }
+a[href*='.css']::after {
+    color:var(--textcolor)
+    display: inline-block;
+}
 
-@media screen and (max-width: 768px) {
-    header, main {
-      flex-direction: column;
-    }
-  
-    section {
-      padding-right: 0;
-    }
-  
-    aside {
-      width: 100%;
-      text-align: center;
-    }
