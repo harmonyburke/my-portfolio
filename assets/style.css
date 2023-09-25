@@ -130,10 +130,10 @@ p{
     font-size: 25px;
 
 }
-
-
+footer ul li{
+    font-family: var(--font);
+    color:var(--textcolor);
 }
-
 
 @media screen and (max-width: 768px) {
     header, main {
