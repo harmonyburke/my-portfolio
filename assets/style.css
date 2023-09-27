@@ -17,7 +17,6 @@ body{
     background-color:var(--palegreen); 
     background-image: url(.\assets\images\6389370_3259804.jpg);
     background-position: center;
-    background-size: 5;
 }
 
 header{
@@ -25,62 +24,61 @@ header{
     flex-direction: row;
     border-style:double;
     background-color: var(--darkgreen);
+    font-family:var(--font);  
+    font-size:20px;
+    color:#fffbdb;
+    align-items: end;
+    
+
 
 }
+
+
 .about-me{ 
     margin-left:30px;
     margin-right: 500px;
     margin-top: 30px;
     background-color: var(--darkgreen);
-    display: flexbox;
-    justify-content: flex-start;
+    display: flex;
+    justify-content: center;
 
 
 }
 .headshot{
     height: 100px;  
     width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.name {
-    font-family:var(--text);  
-    font-size:40px;
-    color:#fffbdb;
-    border-style:double;
-    background-color: var(--persianred);
-    display:flex;
-    justify-content:center;
-}
+/* want the picture to center */
 nav{
-    margin:left 20px;
     padding: 20px;
     font-size: 25px;
     font-family:var(--font);  
     color:var(--textcolor);
-    display: flex;
-    flex-direction: row;
+    display:flex;
 }
 ul{
     list-style-type: none;
-    display: inline-block;
-    justify-content: flex-end;
+    display:flex;
     flex-direction: row;
 }
 
 
-.nav-links nav ul li a{
+ .nav-links nav ul li a{ 
     list-style-type: none;
-    display:inline-block;
+    display:flex;
     position: relative;
     font-size: 20px;
-    display:inline-block;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: auto;
     width: 50%;
     border: 3px double;
     padding: 10px;
     
 
-}
+ } 
 
 #about-me {
     padding: 20px;
@@ -116,26 +114,31 @@ p{
 
 }
 #work{
-    display:block;
     border-style: double;
     font-family: var(--font);
     color:var(--textcolor);
     text-decoration: none;
     font-size: 30px;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+} 
+#work h1{
+    display: flex;
     align-items: flex-start;
-    flex-direction: column;
+    justify-content: center;
 }
-
+/* need this to center */
 .main-project {
     border-style:double;
     size: 50%;
     padding:20px;
     margin:20px;
     text-decoration: none;
+    flex-grow:1;
 
 }
-img {
+.img-1 {
     height: 400px;
     width: 400px;
     margin: 10px;
@@ -144,11 +147,31 @@ img {
     display: block;
 
 }
-.project{
+.img-2 {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-style:none;
+    display: block;
+}
+
+.projects{
+    display: flex;
     border-style:double;
     size:100px;
     padding:15px;
     margin:15px;
+
+}
+.projects li{
+    display:flex;
+    border-style:double;
+    size:100px;
+    padding:15px;
+    margin:15px;
+
+
 }
 #contact-me{
     font-family: var(--font);
@@ -165,4 +188,31 @@ a[href*='.css']::after {
     color:var(--textcolor)
     display: inline-block;
 }
+@media screen and (max-width: 992px) {
+    header{
+        flex-wrap: wrap;
 
+    }
+    #about-me{
+        flex-wrap: wrap;
+        font-size: small;
+        justify-content: center;
+        flex-direction: row;
+    }
+    #work{
+        flex-wrap: wrap;
+        flex-direction: column;
+        size: 20px;;
+    }
+    
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    nav {
+     
+    }
+  }
+  
+  
+  @media screen and (max-width: 576px)
