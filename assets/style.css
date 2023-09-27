@@ -7,12 +7,14 @@
     --font:'Courier New', Courier, monospace;
 }
 *{  
+    max-width:max-content
     margin:0;
     padding:0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
+/* sets up basic css properties for the entire webpage */
 body{
     background-color:var(--palegreen); 
     background-image: url(.\assets\images\6389370_3259804.jpg);
@@ -28,11 +30,40 @@ header{
     font-size:20px;
     color:#fffbdb;
     align-items: end;
+    display: flex;
+    justify-content: space-between;
     
 
 
 }
+nav{
+    padding: 20px;
+    font-size: 25px;
+    font-family:var(--font);  
+    color:var(--textcolor);
+    display:flex;
+}
+ul{
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+}
 
+
+ .nav-links nav ul li a {
+    list-style-type: none;
+    display:flex;
+    position: relative;
+    font-size: 20px;
+    justify-content: space-between;
+    margin: auto;
+    width: 50%;
+    border: 3px double;
+    padding: 10px;
+    gap:40px;
+    
+
+ } 
 
 .about-me{ 
     margin-left:30px;
@@ -44,6 +75,7 @@ header{
 
 
 }
+
 .headshot{
     height: 100px;  
     width: 100px;
@@ -52,7 +84,7 @@ header{
     align-items: center;
 }
 /* want the picture to center */
-nav{
+/*nav{
     padding: 20px;
     font-size: 25px;
     font-family:var(--font);  
@@ -78,7 +110,7 @@ ul{
     padding: 10px;
     
 
- } 
+ } */
 
 #about-me {
     padding: 20px;
@@ -96,7 +128,7 @@ ul{
     
 
 }
-h2{
+#about-me h2{
     justify-content: center;
     border-style: double;
     font-family:var(--font);
@@ -145,6 +177,8 @@ p{
     padding: 10px;
     border-style:none;
     display: block;
+    justify-content: center;
+    align-items: center;
 
 }
 .img-2 {
@@ -209,10 +243,37 @@ a[href*='.css']::after {
   
   
   @media screen and (max-width: 768px) {
-    nav {
-     
+    header{
+        flex-wrap: wrap;
+
     }
-  }
+    #about-me{
+        flex-wrap: wrap;
+        font-size: small;
+        justify-content: center;
+        flex-direction: row;
+    }
+    #work{
+        flex-wrap: wrap;
+        flex-direction: column;
+        size: 20px;;
+    }
   
+}
+  @media screen and (max-width: 576px) {
+    header{
+        flex-wrap: wrap;
+
+    }
+    #about-me{
+        flex-wrap: wrap;
+        font-size: small;
+        justify-content: center;
+        flex-direction: row;
+    }
+    #work{
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-shrink: 4;
+    }
   
-  @media screen and (max-width: 576px)
