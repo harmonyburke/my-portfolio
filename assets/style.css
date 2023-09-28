@@ -18,7 +18,7 @@
 body{
     background-color:var(--palegreen); 
     background-image: url(.\assets\images\6389370_3259804.jpg);
-    background-position: center;
+    background-position: cover;
 }
 a{
     color:var(--textcolor);
@@ -201,18 +201,29 @@ a[href*='.css']::after {
 @media screen and (max-width: 992px) {
     header{
         flex-wrap: wrap;
+        width: 100%;
 
     }
     #about-me{
+        width: 100%;
         flex-wrap: wrap;
-        font-size: small;
         justify-content: center;
         flex-direction: row;
     }
-    #work{
+    .main-project{
+        width: 100%;
         flex-wrap: wrap;
         flex-direction: column;
-        size: 20px;;
+        size: 20px;
+    }
+    .projects{
+        width: 100%;    
+        flex-wrap: wrap;
+    }
+    footer ul{
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
     }
     
   }
@@ -221,35 +232,60 @@ a[href*='.css']::after {
   @media screen and (max-width: 768px) {
     header{
         flex-wrap: wrap;
+        width: 100%;
 
     }
     #about-me{
+        width: 100%;
         flex-wrap: wrap;
-        font-size: small;
         justify-content: center;
         flex-direction: row;
     }
-    #work{
+    .main-project{
+        width: 100%;
         flex-wrap: wrap;
         flex-direction: column;
-        size: 20px;;
+        size: 20px;
     }
+    .projects{
+        width: 100%;    
+        flex-wrap: wrap;
+    }
+    footer ul {
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+    }
+    
   
 }
   @media screen and (max-width: 576px) {
     header{
         flex-wrap: wrap;
+        width: 100%;
 
     }
     #about-me{
+        width: 100%;
         flex-wrap: wrap;
-        font-size: small;
         justify-content: center;
         flex-direction: row;
     }
-    #work{
+    .main-project{
+        width: 100%;
         flex-wrap: wrap;
         flex-direction: column;
-        flex-shrink: 4;
+        justify-content: center;
+        size: 20px;
     }
-  
+    .projects{
+        width: 100%;    
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer ul {
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+    }
+    
