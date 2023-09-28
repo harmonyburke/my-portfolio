@@ -20,7 +20,10 @@ body{
     background-image: url(.\assets\images\6389370_3259804.jpg);
     background-position: center;
 }
-
+a{
+    color:var(--textcolor);
+}
+/* changed color of links to text color to match the rest of the webpage */
 header{
     display:flex;
     flex-direction: row;
@@ -48,6 +51,7 @@ ul{
     flex-direction: row;
     gap:40px;
 }
+/* used gap to space the links out */
 
 
  .nav-links nav ul li a {
@@ -63,6 +67,7 @@ ul{
     
 
  } 
+
 
 .about-me{ 
     margin-left:30px;
@@ -106,7 +111,7 @@ ul{
     border-style: double;
     font-family:var(--font);
     color:#fffbdb;
-    background-color: var(--persianred);
+    background-color: var(--darkgreen);
     text-align: center;
 }
 p{
@@ -132,6 +137,7 @@ p{
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    
 }
 /* need this to center */
 .main-project {
@@ -146,8 +152,6 @@ p{
 .img-1 {
     height: 400px;
     width: 400px;
-    margin: 10px;
-    padding: 10px;
     border-style:none;
     display: block;
     justify-content: center;
@@ -157,8 +161,6 @@ p{
 .img-2 {
     height: 100px;
     width: 100px;
-    margin: 10px;
-    padding: 10px;
     border-style:none;
     display: block;
 }
