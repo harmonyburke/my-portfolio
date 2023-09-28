@@ -15,3 +15,5 @@ To use this webpage, click on the links in the navigation bar at the top of the 
 
 This webpage features links to call me, email me, find me on linkedin, or view my github for more information.
 
+## Credits
+I used a free image as a placeholder for my empty links. "https://classroomclipart.com/image/vector-clipart/potted-succulent-plant-with-a-pink-flower-57125.html"
