@@ -30,7 +30,6 @@ header{
     font-size:20px;
     color:#fffbdb;
     align-items: end;
-    display: flex;
     justify-content: space-between;
     
 
@@ -47,6 +46,7 @@ ul{
     list-style-type: none;
     display:flex;
     flex-direction: row;
+    gap:40px;
 }
 
 
@@ -60,7 +60,6 @@ ul{
     width: 50%;
     border: 3px double;
     padding: 10px;
-    gap:40px;
     
 
  } 
@@ -84,33 +83,6 @@ ul{
     align-items: center;
 }
 /* want the picture to center */
-/*nav{
-    padding: 20px;
-    font-size: 25px;
-    font-family:var(--font);  
-    color:var(--textcolor);
-    display:flex;
-}
-ul{
-    list-style-type: none;
-    display:flex;
-    flex-direction: row;
-}
-
-
- .nav-links nav ul li a{ 
-    list-style-type: none;
-    display:flex;
-    position: relative;
-    font-size: 20px;
-    justify-content: space-between;
-    margin: auto;
-    width: 50%;
-    border: 3px double;
-    padding: 10px;
-    
-
- } */
 
 #about-me {
     padding: 20px;
@@ -120,6 +92,7 @@ ul{
     color:var(--textcolor);
     background-color: var(--darkgreen);
     flex-direction: column;
+    justify-content: center;
     padding: 20px;
     clear: both;
     float: left;
