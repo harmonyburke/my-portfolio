@@ -2,8 +2,6 @@
     --palegreen: #66A182;
     --darkgreen:#26413C;
     --textcolor:#fffbdb;
-    --burntorange:#c47335;
-    --persianred:#bb4430;
     --font:'Courier New', Courier, monospace;
 }
 *{  
@@ -83,9 +81,8 @@ ul{
 .headshot{
     height: 100px;  
     width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    left:20%;
 }
 /* want the picture to center */
 
@@ -132,10 +129,11 @@ p{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    flex-direction: column;
 } 
 #work h1{
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
     
 }
@@ -209,6 +207,9 @@ a[href*='.css']::after {
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: row;
+    }
+    .headshot{
+        display: block;
     }
     .main-project{
         width: 100%;
@@ -288,4 +289,4 @@ a[href*='.css']::after {
         width: 100%;
         flex-direction: column;
     }
-    
+    /* added media queries to adjust for all sizes of devices */
