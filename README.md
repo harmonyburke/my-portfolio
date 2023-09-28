@@ -5,11 +5,13 @@ I created this webpage to serve as a portfolio of my own work throughout this co
 
 
 ## Installation
-Visit this webpage at ...
+Visit this webpage at https://harmonyburke.github.io/my-portfolio/
 ## Usage
 
 To use this webpage, click on the links in the navigation bar at the top of the page labeled "About Me, Work, and Contact Me," to navigate to those respective sections. Once you navigate to the "About Me" section, you will see a picture of me and a short biography. If you navigate to the "Work" section, you can click on any of the photo links to view the different projects I have worked on. If you navigate to the "Contact Me" section, you can click on any of those links to navigate to your preferred method of contact.
 
+![alt text](<assets\images\Screenshot 2023-09-28 181941.png>)
+![alt text](<assets\images\Screenshot 2023-09-28 182031.png>)
 
 ## Features
 
